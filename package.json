@@ -4,10 +4,10 @@
   "description": "https://www.youtube.com/watch?v=eU-p-jreAN4",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --experimental-json-modules app.js",
-    "debug": "npm run windowsDebug",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "windowsDebug": "@powershell -Command $env:DEBUG='app,app:*';nodemon --experimental-json-modules app.js"
+    "start": "node dist/index.js",
+    "dev": "tsc-watch --onSuccess \"@powershell -Command $env:DEBUG='app,app:*';node dist/index.js\"",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
