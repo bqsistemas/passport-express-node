@@ -8,5 +8,7 @@ import { signUp, signIn } from '../controllers/user.controller'
 const debug = createDebug('app:routes:auth')
 const router = Router()
 
-router.post('signup', signUp)
-router.post('signin', signIn)
+router.post('/signup', signUp)
+router.post('/signin', signIn)
+
+export default router
