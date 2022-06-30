@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "ec1fc691-8227-43e8-acb8-adddef13a8b8",
+		"name": "Passport-MongoDb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15583106"
+	},
+	"item": [
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"bqsistemas@gmail.com\",\r\n    \"password\": \"123\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/signup",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SignIn",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"bqsistemas@gmail.com\",\r\n    \"password\": \"123\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/signin",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Special",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYmNmYjIwODkzMmYwZDQzNGE2OTA0NyIsImVtYWlsIjoiYnFzaXN0ZW1hc0BnbWFpbC5jb20iLCJpYXQiOjE2NTY1NTI4MzQsImV4cCI6MTY1NjYzOTIzNH0.PfbE3RVWB_K7ocTS6d3Sf5i8yPR4tOw7sXgUU3IN3CE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:3000/special",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"special"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
