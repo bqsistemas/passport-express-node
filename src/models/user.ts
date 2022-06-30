@@ -7,7 +7,8 @@ const debug = createDebug('app:models:user')
 
 export interface IUser extends Document {
     email: String,
-    password: String
+    password: String,
+    comparePassword: (password: string) => Promise<boolean>
 }
 
 const userSchema = new Schema({
